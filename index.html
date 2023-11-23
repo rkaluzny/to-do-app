@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ToDo List</h1>
+      <div id="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Neue Aufgabe hinzufügen"
+        />
+        <button onclick="addTask()">Hinzufügen</button>
+      </div>
+      <ul id="task-list"></ul>
+    </div>
+
+    <div>
+      <label for="status-filter">Status filtern:</label>
+      <select id="status-filter">
+        <option value="all">Alle</option>
+        <option value="completed">Erledigt</option>
+        <option value="pending">Ausstehend</option>
+      </select>
+
+      <label for="priority-filter">Priorität filtern:</label>
+      <select id="priority-filter">
+        <option value="all">Alle</option>
+        <option value="low">Niedrig</option>
+        <option value="medium">Mittel</option>
+        <option value="high">Hoch</option>
+      </select>
+
+    <script src="script.js"></script>
+  </body>
+</html>
